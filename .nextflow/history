@@ -1,0 +1,6 @@
+2024-06-03 19:16:48	-	jovial_lorenz	-	ab170d71864babe3fcd1d6e864597807	bfea76c3-1711-46e2-a048-84f5796cb5a6	nextflow run test.nf
+2024-06-03 19:17:48	-	desperate_northcutt	-	49e0692b49b2067cf8ec435533603f98	da0559e2-0083-41e9-a43d-a4815be49199	nextflow run test.nf
+2024-06-03 19:19:26	-	nasty_lorenz	-	38e5df6f35183077c2e14342ca0537b3	a7b44875-705e-4ee0-995f-1abaa2fe92e1	nextflow run test.nf
+2024-06-03 19:19:42	2s	distracted_ardinghelli	ERR	d035f3150eb4e698ac3c41b85e1566f7	6fd543fb-8452-49ef-a83e-c4fd7407adcd	nextflow run test.nf
+2024-06-03 19:20:02	2.2s	backstabbing_kimura	ERR	a5793be4bdbbe1879489b74c39a7148e	768f274c-1429-4b1e-bb54-22794d3c331d	nextflow run test.nf
+2024-06-03 19:20:19	1.8s	festering_ramanujan	OK	58475416ccdc926fba703a3a46ce11e3	20a9638a-17ad-4355-a4ec-f0082e491ae3	nextflow run test.nf

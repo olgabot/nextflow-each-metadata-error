@@ -1,0 +1,70 @@
+Jun-03 19:20:18.830 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf
+Jun-03 19:20:18.928 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jun-03 19:20:18.956 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/olgabot/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jun-03 19:20:18.976 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-03 19:20:18.977 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-03 19:20:18.980 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jun-03 19:20:18.993 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-03 19:20:19.055 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jun-03 19:20:19.071 [main] DEBUG nextflow.cli.CmdRun - Launching `test.nf` [festering_ramanujan] DSL2 - revision: 58475416cc
+Jun-03 19:20:19.073 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-03 19:20:19.073 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-03 19:20:19.134 [main] DEBUG nextflow.Session - Session UUID: 20a9638a-17ad-4355-a4ec-f0082e491ae3
+Jun-03 19:20:19.134 [main] DEBUG nextflow.Session - Run name: festering_ramanujan
+Jun-03 19:20:19.135 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jun-03 19:20:19.144 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-03 19:20:19.184 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (28-05-2024 23:19 PDT)
+  System: Mac OS X 14.4.1
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21+35
+  Encoding: UTF-8 (UTF-8)
+  Process: 40301@Olgas-MBP-2.attlocal.net [192.168.1.67]
+  CPUs: 16 - Mem: 16 GB (19.9 MB) - Swap: 13 GB (1.9 GB) - Virtual threads ON
+Jun-03 19:20:19.200 [main] DEBUG nextflow.Session - Work-dir: /Users/olgabot/code/nextflow-each-metadata-error/work [Mac OS X]
+Jun-03 19:20:19.201 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/olgabot/code/nextflow-each-metadata-error/bin
+Jun-03 19:20:19.215 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-03 19:20:19.228 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-03 19:20:19.259 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-03 19:20:19.268 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Jun-03 19:20:19.340 [main] DEBUG nextflow.Session - Session start
+Jun-03 19:20:19.975 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-03 19:20:19.989 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/olgabot/.nextflow/secrets/store.json
+Jun-03 19:20:19.998 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@43cb5f38] - activable => nextflow.secret.LocalSecretsProvider@43cb5f38
+Jun-03 19:20:20.187 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-03 19:20:20.188 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-03 19:20:20.194 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-03 19:20:20.200 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=16 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jun-03 19:20:20.203 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-03 19:20:20.262 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [1]
+Jun-03 19:20:20.293 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: test_each
+Jun-03 19:20:20.293 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Jun-03 19:20:20.294 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > test_each
+Jun-03 19:20:20.295 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > test_each
+Jun-03 19:20:20.295 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_87fb72bc43c16528: /Users/olgabot/code/nextflow-each-metadata-error/test.nf
+Jun-03 19:20:20.295 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-03 19:20:20.296 [main] DEBUG nextflow.Session - Session await
+Jun-03 19:20:20.498 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:20.500 [Task submitter] INFO  nextflow.Session - [9b/0bdb9b] Submitted process > test_each (4)
+Jun-03 19:20:20.507 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:20.508 [Task submitter] INFO  nextflow.Session - [29/d5ae1d] Submitted process > test_each (2)
+Jun-03 19:20:20.514 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:20.515 [Task submitter] INFO  nextflow.Session - [74/cda3dc] Submitted process > test_each (5)
+Jun-03 19:20:20.522 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:20.522 [Task submitter] INFO  nextflow.Session - [ef/896a56] Submitted process > test_each (1)
+Jun-03 19:20:20.529 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:20.530 [Task submitter] INFO  nextflow.Session - [bf/dc139c] Submitted process > test_each (3)
+Jun-03 19:20:20.534 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: test_each (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/9b/0bdb9be14090c8f1399423276e2009]
+Jun-03 19:20:20.541 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: test_each (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/29/d5ae1db2cf3cbb3f978235d15ba60b]
+Jun-03 19:20:20.550 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: test_each (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/74/cda3dc203f34658105bd458d6d43fc]
+Jun-03 19:20:20.557 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: test_each (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/ef/896a56d0809fd458009a7f5aba0f14]
+Jun-03 19:20:20.565 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: test_each (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/bf/dc139c4fc8fc2cad887b5a3c6dec52]
+Jun-03 19:20:20.584 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-03 19:20:20.667 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-03 19:20:20.667 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-03 19:20:20.670 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jun-03 19:20:20.675 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=44ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=5; peakCpus=5; peakMemory=0; ]
+Jun-03 19:20:20.834 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-03 19:20:20.850 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jun-03 19:20:20.850 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

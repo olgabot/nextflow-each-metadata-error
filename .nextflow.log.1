@@ -1,0 +1,104 @@
+Jun-03 19:20:02.196 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf
+Jun-03 19:20:02.288 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jun-03 19:20:02.317 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/olgabot/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jun-03 19:20:02.330 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-03 19:20:02.331 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-03 19:20:02.343 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jun-03 19:20:02.356 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-03 19:20:02.419 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jun-03 19:20:02.436 [main] DEBUG nextflow.cli.CmdRun - Launching `test.nf` [backstabbing_kimura] DSL2 - revision: a5793be4bd
+Jun-03 19:20:02.437 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-03 19:20:02.438 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-03 19:20:02.502 [main] DEBUG nextflow.Session - Session UUID: 768f274c-1429-4b1e-bb54-22794d3c331d
+Jun-03 19:20:02.503 [main] DEBUG nextflow.Session - Run name: backstabbing_kimura
+Jun-03 19:20:02.504 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jun-03 19:20:02.513 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-03 19:20:02.552 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (28-05-2024 23:19 PDT)
+  System: Mac OS X 14.4.1
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21+35
+  Encoding: UTF-8 (UTF-8)
+  Process: 39654@Olgas-MBP-2.attlocal.net [192.168.1.67]
+  CPUs: 16 - Mem: 16 GB (31.9 MB) - Swap: 13 GB (1.7 GB) - Virtual threads ON
+Jun-03 19:20:02.567 [main] DEBUG nextflow.Session - Work-dir: /Users/olgabot/code/nextflow-each-metadata-error/work [Mac OS X]
+Jun-03 19:20:02.568 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/olgabot/code/nextflow-each-metadata-error/bin
+Jun-03 19:20:02.583 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-03 19:20:02.598 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-03 19:20:02.626 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-03 19:20:02.635 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Jun-03 19:20:02.709 [main] DEBUG nextflow.Session - Session start
+Jun-03 19:20:03.306 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-03 19:20:03.323 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/olgabot/.nextflow/secrets/store.json
+Jun-03 19:20:03.332 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6435fa1c] - activable => nextflow.secret.LocalSecretsProvider@6435fa1c
+Jun-03 19:20:03.537 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-03 19:20:03.537 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-03 19:20:03.544 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-03 19:20:03.551 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=16 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jun-03 19:20:03.554 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-03 19:20:03.603 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [1]
+Jun-03 19:20:03.635 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: test_each
+Jun-03 19:20:03.636 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Jun-03 19:20:03.637 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > test_each
+Jun-03 19:20:03.638 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > test_each
+Jun-03 19:20:03.638 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_03d7f0bb6bbf752b: /Users/olgabot/code/nextflow-each-metadata-error/test.nf
+Jun-03 19:20:03.638 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-03 19:20:03.638 [main] DEBUG nextflow.Session - Session await
+Jun-03 19:20:03.869 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:03.871 [Task submitter] INFO  nextflow.Session - [93/4a32d7] Submitted process > test_each (5)
+Jun-03 19:20:03.879 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:03.879 [Task submitter] INFO  nextflow.Session - [7b/0cfe5d] Submitted process > test_each (1)
+Jun-03 19:20:03.887 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:03.888 [Task submitter] INFO  nextflow.Session - [46/864bc7] Submitted process > test_each (3)
+Jun-03 19:20:03.894 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:03.894 [Task submitter] INFO  nextflow.Session - [ad/907aa8] Submitted process > test_each (2)
+Jun-03 19:20:03.901 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-03 19:20:03.902 [Task submitter] INFO  nextflow.Session - [9a/2cfab5] Submitted process > test_each (4)
+Jun-03 19:20:03.912 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: test_each (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/93/4a32d79d22dc26ebb8032f01cab450]
+Jun-03 19:20:03.918 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: test_each (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/7b/0cfe5de78d7872e1bd56e9793a6edb]
+Jun-03 19:20:03.920 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: test_each (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/46/864bc775f97b8a0b487f3f67a15524]
+Jun-03 19:20:03.927 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: test_each (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/ad/907aa860641f132f2354291865062e]
+Jun-03 19:20:03.935 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: test_each (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/9a/2cfab5b886c061f6db6410acd283df]
+Jun-03 19:20:03.946 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=test_each (4); work-dir=/Users/olgabot/code/nextflow-each-metadata-error/work/9a/2cfab5b886c061f6db6410acd283df
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `_*.md` expected by process `test_each (4)`
+Jun-03 19:20:03.972 [TaskFinalizer-5] ERROR nextflow.processor.TaskProcessor - Error executing process > 'test_each (4)'
+
+Caused by:
+  Missing output file(s) `_*.md` expected by process `test_each (4)`
+
+
+Command executed:
+
+  touch README_4.md
+
+Command exit status:
+  0
+
+Command output:
+  (empty)
+
+Work dir:
+  /Users/olgabot/code/nextflow-each-metadata-error/work/9a/2cfab5b886c061f6db6410acd283df
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Jun-03 19:20:03.974 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=test_each (3); work-dir=/Users/olgabot/code/nextflow-each-metadata-error/work/46/864bc775f97b8a0b487f3f67a15524
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `_*.md` expected by process `test_each (3)`
+Jun-03 19:20:03.975 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=test_each (5); work-dir=/Users/olgabot/code/nextflow-each-metadata-error/work/93/4a32d79d22dc26ebb8032f01cab450
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `_*.md` expected by process `test_each (5)`
+Jun-03 19:20:03.976 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=test_each (1); work-dir=/Users/olgabot/code/nextflow-each-metadata-error/work/7b/0cfe5de78d7872e1bd56e9793a6edb
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `_*.md` expected by process `test_each (1)`
+Jun-03 19:20:03.977 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=test_each (2); work-dir=/Users/olgabot/code/nextflow-each-metadata-error/work/ad/907aa860641f132f2354291865062e
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `_*.md` expected by process `test_each (2)`
+Jun-03 19:20:03.980 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-03 19:20:03.983 [TaskFinalizer-5] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `_*.md` expected by process `test_each (4)`
+Jun-03 19:20:04.002 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-03 19:20:04.003 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-03 19:20:04.010 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=5; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=26ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=5; peakCpus=5; peakMemory=0; ]
+Jun-03 19:20:04.188 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-03 19:20:04.201 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
