@@ -1,0 +1,67 @@
+Jun-03 19:16:48.311 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf
+Jun-03 19:16:48.392 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jun-03 19:16:48.426 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/olgabot/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jun-03 19:16:48.441 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-03 19:16:48.443 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-03 19:16:48.446 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jun-03 19:16:48.463 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-03 19:16:48.548 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jun-03 19:16:48.574 [main] DEBUG nextflow.cli.CmdRun - Launching `test.nf` [jovial_lorenz] DSL2 - revision: ab170d7186
+Jun-03 19:16:48.576 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-03 19:16:48.576 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-03 19:16:48.652 [main] DEBUG nextflow.Session - Session UUID: bfea76c3-1711-46e2-a048-84f5796cb5a6
+Jun-03 19:16:48.653 [main] DEBUG nextflow.Session - Run name: jovial_lorenz
+Jun-03 19:16:48.654 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jun-03 19:16:48.665 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-03 19:16:48.711 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (28-05-2024 23:19 PDT)
+  System: Mac OS X 14.4.1
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21+35
+  Encoding: UTF-8 (UTF-8)
+  Process: 36491@Olgas-MBP-2.attlocal.net [192.168.1.67]
+  CPUs: 16 - Mem: 16 GB (36 MB) - Swap: 14 GB (1.6 GB) - Virtual threads ON
+Jun-03 19:16:48.730 [main] DEBUG nextflow.Session - Work-dir: /Users/olgabot/code/nextflow-each-metadata-error/work [Mac OS X]
+Jun-03 19:16:48.731 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/olgabot/code/nextflow-each-metadata-error/bin
+Jun-03 19:16:48.750 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-03 19:16:48.765 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-03 19:16:48.795 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-03 19:16:48.805 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Jun-03 19:16:48.892 [main] DEBUG nextflow.Session - Session start
+Jun-03 19:16:49.508 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-03 19:16:49.524 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/olgabot/.nextflow/secrets/store.json
+Jun-03 19:16:49.531 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@12e12ac9] - activable => nextflow.secret.LocalSecretsProvider@12e12ac9
+Jun-03 19:16:49.611 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_9cf57ee29e912af0: /Users/olgabot/code/nextflow-each-metadata-error/test.nf
+Jun-03 19:16:49.611 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function view()
+Jun-03 19:16:49.624 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingProcessException: Missing process or function view()
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:191)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:198)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.ArrayList.view() is applicable for argument types: () values: []
+Possible solutions: size(), size(), find(), grep(), find(), grep()
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:72)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.unwrap(IndyGuardsFiltersAndSignatures.java:163)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_9cf57ee29e912af0$_runScript_closure2$_closure4.doCall(Script_9cf57ee29e912af0:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
+	... 11 common frames omitted

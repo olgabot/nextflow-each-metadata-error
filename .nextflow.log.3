@@ -1,51 +1,45 @@
-Jun-03 19:19:26.078 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf
-Jun-03 19:19:26.170 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
-Jun-03 19:19:26.197 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/olgabot/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
-Jun-03 19:19:26.212 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-03 19:19:26.213 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-03 19:19:26.216 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
-Jun-03 19:19:26.233 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-03 19:19:26.311 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Jun-03 19:19:26.331 [main] DEBUG nextflow.cli.CmdRun - Launching `test.nf` [nasty_lorenz] DSL2 - revision: 38e5df6f35
-Jun-03 19:19:26.333 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jun-03 19:19:26.333 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jun-03 19:19:26.407 [main] DEBUG nextflow.Session - Session UUID: a7b44875-705e-4ee0-995f-1abaa2fe92e1
-Jun-03 19:19:26.407 [main] DEBUG nextflow.Session - Run name: nasty_lorenz
-Jun-03 19:19:26.408 [main] DEBUG nextflow.Session - Executor pool size: 16
-Jun-03 19:19:26.419 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jun-03 19:19:26.458 [main] DEBUG nextflow.cli.CmdRun - 
+Jun-05 07:18:39.283 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test_combine.nf
+Jun-05 07:18:39.364 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jun-05 07:18:39.385 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/olgabot/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jun-05 07:18:39.398 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-05 07:18:39.399 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-05 07:18:39.403 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jun-05 07:18:39.416 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-05 07:18:39.496 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jun-05 07:18:39.522 [main] DEBUG nextflow.cli.CmdRun - Launching `test_combine.nf` [nauseous_mcclintock] DSL2 - revision: bd79afccb0
+Jun-05 07:18:39.524 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-05 07:18:39.524 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-05 07:18:39.595 [main] DEBUG nextflow.Session - Session UUID: 761e0ab8-f776-4a69-8af5-0e09382375d6
+Jun-05 07:18:39.596 [main] DEBUG nextflow.Session - Run name: nauseous_mcclintock
+Jun-05 07:18:39.597 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jun-05 07:18:39.607 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-05 07:18:39.633 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 24.04.2 build 5914
   Created: 29-05-2024 06:19 UTC (28-05-2024 23:19 PDT)
   System: Mac OS X 14.4.1
   Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21+35
   Encoding: UTF-8 (UTF-8)
-  Process: 38893@Olgas-MBP-2.attlocal.net [192.168.1.67]
-  CPUs: 16 - Mem: 16 GB (31.9 MB) - Swap: 13 GB (1.6 GB) - Virtual threads ON
-Jun-03 19:19:26.473 [main] DEBUG nextflow.Session - Work-dir: /Users/olgabot/code/nextflow-each-metadata-error/work [Mac OS X]
-Jun-03 19:19:26.474 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/olgabot/code/nextflow-each-metadata-error/bin
-Jun-03 19:19:26.492 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jun-03 19:19:26.506 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jun-03 19:19:26.537 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jun-03 19:19:26.548 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
-Jun-03 19:19:26.632 [main] DEBUG nextflow.Session - Session start
-Jun-03 19:19:27.262 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jun-03 19:19:27.281 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/olgabot/.nextflow/secrets/store.json
-Jun-03 19:19:27.291 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6435fa1c] - activable => nextflow.secret.LocalSecretsProvider@6435fa1c
-Jun-03 19:19:27.514 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jun-03 19:19:27.515 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jun-03 19:19:27.523 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jun-03 19:19:27.531 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=16 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
-Jun-03 19:19:27.534 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jun-03 19:19:27.586 [main] DEBUG nextflow.processor.TaskProcessor - Creating *combiner* operator for each param(s) at index(es): [1]
-Jun-03 19:19:27.627 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_58c6bec6c9180b7c: /Users/olgabot/code/nextflow-each-metadata-error/test.nf
-Jun-03 19:19:27.627 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function md_numberview()
-Jun-03 19:19:27.641 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jun-03 19:19:27.648 [main] DEBUG nextflow.Session - The following nodes are still active:
+  Process: 7950@Olgas-MacBook-Pro-2.local [127.0.0.1]
+  CPUs: 16 - Mem: 16 GB (103.4 MB) - Swap: 5 GB (1.7 GB) - Virtual threads ON
+Jun-05 07:18:39.648 [main] DEBUG nextflow.Session - Work-dir: /Users/olgabot/code/nextflow-each-metadata-error/work [Mac OS X]
+Jun-05 07:18:39.649 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/olgabot/code/nextflow-each-metadata-error/bin
+Jun-05 07:18:39.667 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-05 07:18:39.679 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-05 07:18:39.709 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-05 07:18:39.719 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Jun-05 07:18:39.801 [main] DEBUG nextflow.Session - Session start
+Jun-05 07:18:40.534 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-05 07:18:40.549 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/olgabot/.nextflow/secrets/store.json
+Jun-05 07:18:40.558 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@750a04ec] - activable => nextflow.secret.LocalSecretsProvider@750a04ec
+Jun-05 07:18:40.708 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_0e38be4c0d35096c: /Users/olgabot/code/nextflow-each-metadata-error/test_combine.nf
+Jun-05 07:18:40.709 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function test_each()
+Jun-05 07:18:40.735 [main] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] combine
   [operator] view
 
-Jun-03 19:19:27.652 [main] ERROR nextflow.cli.Launcher - @unknown
-nextflow.exception.MissingProcessException: Missing process or function md_numberview()
+Jun-05 07:18:40.740 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingProcessException: Missing process or function test_each()
 	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:191)
 	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
 	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
@@ -58,11 +52,16 @@ nextflow.exception.MissingProcessException: Missing process or function md_numbe
 	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
 	at nextflow.cli.Launcher.run(Launcher.groovy:503)
 	at nextflow.cli.Launcher.main(Launcher.groovy:657)
-Caused by: groovy.lang.MissingMethodException: No signature of method: nextflow.script.ChannelOut.md_numberview() is applicable for argument types: () values: []
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:72)
-	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.unwrap(IndyGuardsFiltersAndSignatures.java:163)
+Caused by: groovy.lang.MissingMethodException: No signature of method: nextflow.script.WorkflowBinding.test_each() is applicable for argument types: () values: []
+Possible solutions: stream()
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:111)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:391)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:330)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
 	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Script_58c6bec6c9180b7c$_runScript_closure2$_closure4.doCall(Script_58c6bec6c9180b7c:28)
+	at Script_0e38be4c0d35096c$_runScript_closure2$_closure4.doCall(Script_0e38be4c0d35096c:27)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
