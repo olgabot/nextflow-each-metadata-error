@@ -1,4 +1,3 @@
-
 process test_combine {
 
     input:

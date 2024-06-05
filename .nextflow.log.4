@@ -1,14 +1,68 @@
-Jun-05 07:18:35.745 [main] DEBUG nextflow.cli.Launcher - $> nextflow run tes_combine.nf
-Jun-05 07:18:35.847 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
-Jun-05 07:18:35.896 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/olgabot/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
-Jun-05 07:18:35.911 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jun-05 07:18:35.912 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jun-05 07:18:35.917 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
-Jun-05 07:18:35.933 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jun-05 07:18:35.964 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /Users/olgabot/.nextflow/scm
-Jun-05 07:18:35.978 [main] DEBUG nextflow.cli.Launcher - Operation aborted
-nextflow.exception.AbortOperationException: Cannot find script file: tes_combine.nf
-	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:517)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:321)
-	at nextflow.cli.Launcher.run(Launcher.groovy:503)
-	at nextflow.cli.Launcher.main(Launcher.groovy:657)
+Jun-05 07:19:07.352 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test_combine.nf
+Jun-05 07:19:07.438 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Jun-05 07:19:07.462 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/olgabot/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Jun-05 07:19:07.478 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-05 07:19:07.479 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-05 07:19:07.483 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Jun-05 07:19:07.496 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-05 07:19:07.566 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jun-05 07:19:07.578 [main] DEBUG nextflow.cli.CmdRun - Launching `test_combine.nf` [scruffy_fermi] DSL2 - revision: b4cd85d32f
+Jun-05 07:19:07.580 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-05 07:19:07.580 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-05 07:19:07.633 [main] DEBUG nextflow.Session - Session UUID: 6b30315e-337c-43ee-a68f-856d5b4659cc
+Jun-05 07:19:07.633 [main] DEBUG nextflow.Session - Run name: scruffy_fermi
+Jun-05 07:19:07.634 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jun-05 07:19:07.641 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-05 07:19:07.666 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (28-05-2024 23:19 PDT)
+  System: Mac OS X 14.4.1
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21+35
+  Encoding: UTF-8 (UTF-8)
+  Process: 8388@Olgas-MacBook-Pro-2.local [127.0.0.1]
+  CPUs: 16 - Mem: 16 GB (117.3 MB) - Swap: 5 GB (1.7 GB) - Virtual threads ON
+Jun-05 07:19:07.677 [main] DEBUG nextflow.Session - Work-dir: /Users/olgabot/code/nextflow-each-metadata-error/work [Mac OS X]
+Jun-05 07:19:07.678 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/olgabot/code/nextflow-each-metadata-error/bin
+Jun-05 07:19:07.689 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-05 07:19:07.700 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-05 07:19:07.724 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-05 07:19:07.732 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Jun-05 07:19:07.790 [main] DEBUG nextflow.Session - Session start
+Jun-05 07:19:08.346 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-05 07:19:08.359 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/olgabot/.nextflow/secrets/store.json
+Jun-05 07:19:08.368 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@750a04ec] - activable => nextflow.secret.LocalSecretsProvider@750a04ec
+Jun-05 07:19:08.566 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-05 07:19:08.566 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-05 07:19:08.572 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-05 07:19:08.580 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=16 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jun-05 07:19:08.583 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-05 07:19:08.643 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: example
+Jun-05 07:19:08.643 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Jun-05 07:19:08.645 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > example
+Jun-05 07:19:08.645 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_b2c15332909610fa: /Users/olgabot/code/nextflow-each-metadata-error/test_combine.nf
+Jun-05 07:19:08.645 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-05 07:19:08.645 [main] DEBUG nextflow.Session - Session await
+Jun-05 07:19:08.839 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-05 07:19:08.841 [Task submitter] INFO  nextflow.Session - [95/62d051] Submitted process > example (4)
+Jun-05 07:19:08.868 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-05 07:19:08.868 [Task submitter] INFO  nextflow.Session - [f7/ae890b] Submitted process > example (1)
+Jun-05 07:19:08.875 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-05 07:19:08.875 [Task submitter] INFO  nextflow.Session - [82/5c985b] Submitted process > example (2)
+Jun-05 07:19:08.881 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-05 07:19:08.881 [Task submitter] INFO  nextflow.Session - [80/54fd15] Submitted process > example (3)
+Jun-05 07:19:08.887 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-05 07:19:08.889 [Task submitter] INFO  nextflow.Session - [8e/9b66c6] Submitted process > example (5)
+Jun-05 07:19:08.973 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: example (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/95/62d05173aa519298c36f2496b866f1]
+Jun-05 07:19:08.975 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: example (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/f7/ae890bfb8d01ef2c4e06826b488cee]
+Jun-05 07:19:08.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: example (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/82/5c985b9c977ea26bb3e7643572d317]
+Jun-05 07:19:08.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: example (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/80/54fd15922b1fc1adec811ce8a5ebf9]
+Jun-05 07:19:08.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: example (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/olgabot/code/nextflow-each-metadata-error/work/8e/9b66c63d35919e61425fa5880b16e0]
+Jun-05 07:19:09.014 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-05 07:19:09.073 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-05 07:19:09.074 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-05 07:19:09.076 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jun-05 07:19:09.082 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=341ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=5; peakCpus=5; peakMemory=0; ]
+Jun-05 07:19:09.309 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-05 07:19:09.329 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jun-05 07:19:09.329 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

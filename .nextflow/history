@@ -8,3 +8,5 @@
 2024-06-05 07:19:07	2.3s	scruffy_fermi	OK	b4cd85d32f176e549b069a3f939107c5	6b30315e-337c-43ee-a68f-856d5b4659cc	nextflow run test_combine.nf
 2024-06-05 07:19:44	2.2s	exotic_bardeen	OK	b4cd85d32f176e549b069a3f939107c5	7c7380e7-8ffb-45c9-8dc2-716bf1518cc8	nextflow run test_combine.nf
 2024-06-05 07:21:23	2.4s	marvelous_cray	OK	11811929d2587d749c0960929e0f1c63	96572080-d379-4d84-989b-76aa43ee67a7	nextflow run test_combine.nf
+2024-06-05 07:29:42	-	happy_leakey	-	3baba9cd222a19816319d45df9a7878c	e749d18a-b660-456b-8265-f6b39aea6980	nextflow run test_combine.nf
+2024-06-05 07:29:57	-	naughty_poitras	-	d5e9775c76bc349a984da9580d1ea2b2	2edb89a6-a2f0-4dd1-88bd-0a9d5073d8c0	nextflow run test_combine.nf
